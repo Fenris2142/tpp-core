@@ -43,6 +43,11 @@ namespace TPP.Core.Modes
             _clock = SystemClock.Instance;
         }
 
+        public void InstallAdditionalCommand(Command command)
+        {
+            _commandProcessor.InstallCommand(command);
+        }
+
         private async void MessageReceived(object? sender, MessageEventArgs e) =>
             await ProcessIncomingMessage(e.Message);
 
