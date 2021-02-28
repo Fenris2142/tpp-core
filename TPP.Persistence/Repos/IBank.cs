@@ -25,6 +25,7 @@ namespace TPP.Persistence.Repos
     {
         public const string SecondaryColorUnlock = "secondary_color_unlock";
         public const string ManualAdjustment = "manual_adjustment";
+        public const string Match = "match";
 
         // collect all the types being used here instead of scattering string literals across the codebase
     }
